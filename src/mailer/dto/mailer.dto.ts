@@ -8,7 +8,7 @@ export const TemplatesEnum = {
 };
 
 const notificationSchema = Joi.object({
-    template: Joi.string().default('WELCOME').required().valid('WELCOME'),
+    template: Joi.string().default('WELCOME').required().valid('WELCOME','GOODBYE'),
     eventType:Joi.string().required(),
     from: Joi.string().allow('').optional().email({ minDomainSegments: 2 }),
     to: Joi.string().required().email({ minDomainSegments: 2 }),
