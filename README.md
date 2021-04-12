@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```shell
 $ git clone https://github.com/yosamac/nerdsletter-email.git
-$ cd nerdsletter-subscription
+$ cd nerdsletter-email
 $ npm install
 ```
 
@@ -33,16 +33,12 @@ npm start start:dev
 
 | Name                    | Description                                | Default                                      |
 | ------------------------| ------------------------------------------ | ---------------------------------------------|
-| MESH_HOST                | Mesh TCP host                             | `0.0.0.0`                                    |
-| MESH_PORT                | Mesh TCP port                             | `4001`                                       |
+| MESH_HOST               | Mesh TCP host                              | `0.0.0.0`                                    |
+| MESH_PORT               | Mesh TCP port                              | `4002`                                       |
 | ENDPOINT_ROUTE          | Global URL prefix                          | NO DEFAULT VALUE                             |
 | NODE_ENV                | Production or development mode             | `development`                                |
 | LOGGING_LEVEL           | Logs level                                 | `INFO`                                       |
-| **Mesh section of other services**                                                                                |||
-| EMAIL_MESH_HOST         | EMAIL SERVICE TCP host                     | `0.0.0.0`                                    |
-| EMAIL_MESH_PORT         | EMAIL SERVICE TCP port                     | `4002`                                       |
-| **Database section**                                                                                              |||
-| MONGODB_URI             | Connection database                        | `mongodb://localhostnerdsletter_subscription`|
+
 
 
 ## Running the tests
@@ -65,7 +61,7 @@ npm run test
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.org/yosama/nerdsletter-subscription/tags).
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.org/yosama/nerdsletter-email/tags).
 
 
 ### Generate Release
@@ -86,7 +82,7 @@ npm run build:pro-image
 ```
 ### Docker compose
 ```shell
-docker-compose up nerdsletter-subscription
+docker-compose up nerdsletter-email
 ```
 
 ### Docker hub repository
